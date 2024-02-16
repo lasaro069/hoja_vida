@@ -3,10 +3,21 @@
 }
 
 body{
+    background-image: linear-gradient(to top, #a3bded 0%, #6991c7 100%);
+/*
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+ background-blend-mode: multiply,multiply;
+*/
+    display: grid;
+    grid-template-columns: 70% 25%;
 }
 
 header {
+    background-color: black;
+
+
     background-image: linear-gradient(to top, #a3bded 0%, #6991c7 100%);
+
     display: grid;
     grid-template-areas: 
         "otro texto texto texto imagen"
@@ -14,29 +25,29 @@ header {
     font-size: 1.5rem;
     position: fixed;
     width: 100%;
-    top: 0;
+    height:160px;
 }
 
 .header {
 }
 
 .texto{
+    height: 120px;
     grid-area: texto;
-    padding-top: 10px;
 }
 
 .img {
     grid-area: imagen;
-    padding-top: 10px
+    padding-top: 10px;
 }
 
 .navegacion{
     position:relative;
     grid-area: navegacion;
+    text-align: end;
 }
 
 nav{
-    position: absolute;
 }
 
 nav li{
@@ -44,15 +55,66 @@ nav li{
     margin: 0 20px 0 20px;
 }
 
+a{
+    color: aliceblue;
+    text-decoration: none
+    
+}
+
 main{
-    background-color: darkgray;
-    margin-top: 180px;
-    width: 80%;
+    margin: 180px 30px 40px;
+    margin-top: 190px;
+    width: 100%;
+    margin-left: 30px;
+    display: grid;
+    grid-row-gap: 20px
+}
+
+.contenido{
+    background: #C9CCD3;
+ background-image: linear-gradient(-180deg, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%);
+ background-blend-mode: lighten;border-radius: 10px;
+}
+
+.objetivo{
+    display: grid;
+    grid-row-gap: 10px;
+}
+
+h2{
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+}
+
+h3{
+}
+
+li{
+    margin-top: 10px;
+}
+
+p{
+    margin: 10px 0 0;
 }
 
 aside{
-    background-color: aquamarine;
-    width: 90%;
+    background-image: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
+    margin-top: 180px;
+    width: 100%;
+    height: 70vh;
+    margin-left: 60px;
+    border-radius: 20px;
+    display: grid;
+    overflow: auto
+    
+}
+
+.imagenes{
+    margin-left: 25px;
+}
+
+.imagen1{
 }
 
 
@@ -71,7 +133,7 @@ footer{
 }
 
 .text-footer{
-    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 
