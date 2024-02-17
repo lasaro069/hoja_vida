@@ -25,7 +25,7 @@ header {
     font-size: 1.5rem;
     position: fixed;
     width: 100%;
-    height:160px;
+    height:180px;
 }
 
 .header {
@@ -38,7 +38,12 @@ header {
 
 .img {
     grid-area: imagen;
-    padding-top: 10px;
+    padding-top: 0px;
+}
+
+.foto{
+    border: 10px solid gray;
+    box-shadow: 5px 5px 5px 5px;    
 }
 
 .navegacion{
@@ -100,21 +105,27 @@ p{
 
 aside{
     background-image: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
-    margin-top: 180px;
+    margin-top: 190px;
     width: 100%;
     height: 70vh;
     margin-left: 60px;
     border-radius: 20px;
     display: grid;
-    overflow: auto
+    overflow: auto;
+    position: sticky;
+    top: 190px;
     
 }
 
 .imagenes{
-    margin-left: 25px;
+    margin-left: 20px;
 }
 
 .imagen1{
+}
+
+aside img{
+    border-radius: 20px;
 }
 
 
